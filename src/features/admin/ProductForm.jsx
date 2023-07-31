@@ -12,6 +12,7 @@ import {
 
 export default function ProductForm({ onIsAddMode, oldProduct }) {
   const initialInput = {
+    id: oldProduct?.el?.id || "",
     name: oldProduct?.el?.name || "",
     description: oldProduct?.el?.description || "",
     price: oldProduct?.el?.price || "",
